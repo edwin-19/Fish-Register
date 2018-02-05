@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="item_click_support" type="id" />
+
+    <!-- Menu -->
+    <item type="id" name="menu_flash" />
+    <item type="id" name="menu_auto_focus" />
+    <item type="id" name="menu_formats" />
+    <item type="id" name="menu_camera_selector" />
+</resources>

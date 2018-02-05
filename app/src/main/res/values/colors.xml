@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#282828</color>
+    <color name="color_primary_dark">#282828</color>
+    <color name="color_primary_text">@android:color/black</color>
+    <color name="color_accent">@android:color/white</color>
+    <color name="color_highlight">#ffb3b3b3</color>
+    <color name="redButton">#EC1C24</color>
+
+    <color name="tabs_primary_grey">#6B6B6B</color>
+    <color name="tabs_secondary_grey">#515151</color>
+    <color name="red">#EC1C24</color>
+
+    <color name="hide_btn">#B85F09</color>
+    <color name="transparent">#AA000000</color>
+</resources>
