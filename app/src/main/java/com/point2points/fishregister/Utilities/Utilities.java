@@ -1108,4 +1108,29 @@ public class Utilities {
         ed.putBoolean(ACTIVE, isActivityOpen);
         ed.apply();
     }
+
+    public static void requestForCameraPermission(Context context) {
+        MarshMallowPermission marshMallowPermission = new MarshMallowPermission((Activity) context);
+        if (!marshMallowPermission.checkPermissionForCamera()) {
+            marshMallowPermission.requestPermissionForCamera(context);
+        }
+
+        if (!marshMallowPermission.checkPermissionForExternalStorage()) {
+            marshMallowPermission.requestPermissionForExternalStorage(context);
+        }
+    }
+
+    public static String convertStringToDate(Date indate) {
+        String dateString = null;
+        SimpleDateFormat sdfr = new SimpleDateFormat("dd/MMM/yyyy");
+   /*you can also use DateFormat reference instead of SimpleDateFormat
+    * like this: DateFormat df = new SimpleDateFormat("dd/MMM/yyyy");
+    */
+        try {
+            dateString = sdfr.format(indate);
+        } catch (Exception ex) {
+            System.out.println(ex);
+        }
+        return dateString;
+    }
 }

@@ -9,6 +9,32 @@
     <!-- QR Activity Title -->
     <string name="title_activity_qr_reader">QR Reader</string>
 
+    <!-- Search Activity -->
+    <string name="title_activity_search">Search Employee</string>
+
+    <!-- Employee Details -->
+    <string name="employee_details">Employee Details</string>
+
+    <!-- Profile Activity Titile -->
+    <string name="title_activity_profile">Profile</string>
+    <string name="view_performance">View Performance</string>
+    <string name="worked">Worked At</string>
+    <string name="sex">Sex:</string>
+    <string name="dob">DOB:</string>
+    <string name="passport">Passport</string>
+    <string name="starting_date">Starting Date:</string>
+    <string name="expring_date">Expire Date:</string>
+
+    <!--Token login -->
+    <string name="title_activity_login">Login</string>
+    <string name="login">Login</string>
+    <string name="email">edwin@gmail.com</string>
+    <string name="pass">******</string>
+
+    <!-- Provider -->
+    <string name="profile_provider">com.point2points.fishregister.login.provider</string>
+    <string name="search_provider">com.point2points.fishregister.search.provider</string>
+
     <!-- Menu -->
     <string name="flash_on">Flash [ON]</string>
     <string name="flash_off">Flash [OFF]</string>
@@ -21,4 +47,9 @@
     <string name="ok_button">OK</string>
     <string name="cancel_button">Cancel</string>
     <string name="select_camera">Select a Camera</string>
+
+    <!-- API -->
+    <string name="base_url">https://api.backendless.com/3133DE80-E2A3-98B9-FF1B-DAAE6FE65500/6924751B-D90F-D7E4-FFF3-0473CE347700/</string>
+    <string name="application_id">3133DE80-E2A3-98B9-FF1B-DAAE6FE65500</string>
+    <string name="api_key">6924751B-D90F-D7E4-FFF3-0473CE347700</string>
 </resources>

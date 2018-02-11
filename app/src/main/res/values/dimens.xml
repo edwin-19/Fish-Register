@@ -12,6 +12,8 @@
     <dimen name="small_profile_size">50dp</dimen>
     <dimen name="big_profile_size">100dp</dimen>
 
+    <dimen name="huge_text_size">40sp</dimen>
+
     <!--Toolbar Layout-->
     <dimen name="toolbar_text_size">20sp</dimen>
 

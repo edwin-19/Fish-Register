@@ -39,7 +39,7 @@ public class AppController extends MultiDexApplication {
     public void onCreate() {
         super.onCreate();
         mInstance = this;
-        sendCacheReport();
+        //sendCacheReport();
         TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "HelveticaLTStd-Light.otf");
     }
 

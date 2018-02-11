@@ -1,22 +1,6 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Edwin\\Documents\\AndroidProjects\\FishRegister\\crop master\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\Edwin\\Documents\\AndroidProjects\\FishRegister\\crop master\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,97,157,219,277,315,369",
-                        "endLines": "2,3,4,5,6,7,17",
-                        "endColumns": "41,59,61,57,37,53,12",
-                        "endOffsets": "92,152,214,272,310,364,855"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "C:\\Users\\Edwin\\Documents\\AndroidProjects\\Repo\\fishregister\\crop master\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
             "map": [
                 {

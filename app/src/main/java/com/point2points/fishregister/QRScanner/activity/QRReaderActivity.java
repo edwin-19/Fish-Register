@@ -1,5 +1,6 @@
 package com.point2points.fishregister.QRScanner.activity;
 
+import android.content.Intent;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
@@ -17,10 +18,13 @@ import android.widget.TextView;
 
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.Result;
+import com.point2points.fishregister.Profile.activity.ProfileActivity;
+import com.point2points.fishregister.Profile.model.Profile;
 import com.point2points.fishregister.QRScanner.fragment.CameraSelectorDialogFragment;
 import com.point2points.fishregister.QRScanner.fragment.FormatSelectorDialogFragment;
 import com.point2points.fishregister.QRScanner.fragment.MessageDialogFragment;
 import com.point2points.fishregister.R;
+import com.point2points.fishregister.Utilities.Utilities;
 
 import java.util.ArrayList;
 
@@ -174,6 +178,12 @@ public class QRReaderActivity extends AppCompatActivity implements MessageDialog
     }
 
     @Override
+    protected void onResumeFragments() {
+        super.onResumeFragments();
+        Utilities.requestForCameraPermission(QRReaderActivity.this);
+    }
+
+    @Override
     public void handleResult(Result result) {
         try {
             Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
@@ -183,7 +193,11 @@ public class QRReaderActivity extends AppCompatActivity implements MessageDialog
             ex.printStackTrace();
             Log.d("Error", ex.getLocalizedMessage());
         }
-        showMessageDialog("Contents = " + result.getText() + ", Format = " + result.getBarcodeFormat().toString());
+        Profile profile = new Profile();
+        Intent intent = new Intent(QRReaderActivity.this, ProfileActivity.class);
+        intent.putExtra("DATA", profile);
+        startActivity(intent);
+        //showMessageDialog("Contents = " + result.getText() + ", Format = " + result.getBarcodeFormat().toString());
     }
 
     public void showMessageDialog(String message) {
